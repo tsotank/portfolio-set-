@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Sora:wght@400;700&display=swap');
+
+:root{
+    --dark:hsl(223, 18%, 16%);
+    --body:#888;
+    --box-shadow:0 8px 22px rgba(0,0,0,0.2);
+    --primary:#007bff;
+}
+body{
+    font-family: 'Sora', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--dark);
+    font-weight: 700;
+}
+a{
+    color: var(--dark);
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.navbar{
+    background-color: var(--dark)!important;
+    font-family: 'Beau Rivage', cursive;
+}
+.navbar li{
+    padding-right: 14px;
+}
+.navbar .nav-link{
+    color: #fff!important;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* hro section */
+.hero{
+    background-image: url(./img/kyoto.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+.hero::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(39, 37, 79, 0.7);
+    z-index: -1;
+}
+
+/* profile section */
+.col-img{
+    background-image: url(img/profile.jpeg);
+    background-position: center;
+    min-height: 666px;
+    background-size: cover;
+}
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color:#fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
