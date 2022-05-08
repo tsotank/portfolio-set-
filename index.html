@@ -22,16 +22,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link" href="#profile">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -50,13 +50,15 @@
           </div>
         </div>
       </section>
+      <!-- hero section 改変版 -->
+      <!-- hero section　改変版 -->
 
       <!-- profile section -->
-      <section class="row bg-light">
+      <section class="profile row bg-light" id="profile">
         <div class="text-center pb-4">
           <h6 class="text-primary pb-1">Profile</h6>
           <h1>田中颯太とは</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsum voluptates rem ipsam perspiciatis ducimus aut? Voluptate dolorum deserunt dolores voluptatem odit veniam, quaerat nesciunt inventore dicta eius sit quidem.</p>
+          <p>私は現在フロントエンドの技術を勉強しております。将来的には学んだ技術を使ってエンジニアとして就職、技術を使っての起業を考えております。</p>
         </div>
         <div class="col-lg-6 col-img">
         </div>
@@ -104,40 +106,42 @@
       </section>
 
       <!-- portfolio section -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="text-center">
             <h6 class="text-primary">My portfolio</h6>
             <h1 class="">WORK</h1>
-            <p class="mt-2ß">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente quisquam laudantium iste recusandae consequatur voluptatem nisi maxime, veritatis sit repellendus quaerat sed ratione! Alias facilis laboriosam eum magnam sint.</p>
+            <p class="mt-2">基本的にはUdemy,Youtube等の動画教材をベースにしてオリジナルなものを作っております。</p>
           </div>
           <div class="container mt-5">
             <div  class="row">
               <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <img src="./img/no-image.jpeg" alt="">
-                <a href="./portfolios/original todo_application/index.html"><p class="">js開発</p></a>
-                <p>現在テーブルに仕様変更して実装中です</p>
+                <img src="./img/no-image.jpg" class="no-image">
+                <a href="portfolios/original_todo_application/index.html"><p>js_todo</p></a>
+                <p>TODOリストをjavascriptを使って開発しました。保存機能、編集機能、削除機能を作りました。期限の設定とそれまでの時間の計測を表示しようとしましたが、li タグに入れるとなると要素が混雑することやスタイルが崩れるためにテーブルに改変して作り直すつもりです。
+                </p>
               </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <img src="./img/no-image.jpeg" alt="">
-                <a href="./portfolios/original todo_application/index.html"><p class="">js開発</p></a>
-                <p>現在テーブルに仕様変更して実装中です</p>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <img src="./img/no-image.jpeg" alt="">
-                <a href="./portfolios/original todo_application/index.html"><p class="">js開発</p></a>
-                <p>現在テーブルに仕様変更して実装中です</p>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <img src="./img/no-image.jpeg" alt="">
-                <a href="./portfolios/original todo_application/index.html"><p class="">js開発</p></a>
-                <p>現在テーブルに仕様変更して実装中です</p>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-                <img src="./img/no-image.jpeg" alt="">
-                <a href="./portfolios/original todo_application/index.html"><p class="">js開発</p></a>
-                <p>現在テーブルに仕様変更して実装中です</p>
-              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- studying section -->
+      <section class="studying" id="studying">
+        <div class="container">
+          <div class="text-center">
+            <h6 class="text-primary">Studying</h6>
+            <h1>STUDYING</h1>
+            <p>このセクションでは教材を使って勉強していったものです。オリジナリティはまだ加えていないために、勉強したものとして保存しています。</p>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+              <img src="./img/no-image.jpg" class="no-image">
+              <a href="studying/imageslider.html"><p>イメージスライダー</p></a>
+              <p>javascriptを使ったイメージスライダーのプログラミングをyoutubeで学習しました。この技術は本ポートフォリオサイトにおいても実装する予定です。</p>
             </div>
           </div>
         </div>
@@ -145,17 +149,34 @@
       </section>
     
       <!-- access section -->
-      
-      <footer class="bg-dark">
-        <div class="container">
-          <h2 class="text-white">アクセス</h2>
-
+      <section class="contact mb-0" id="contact">
+        <div class="footer bg-dark text-center">
+          <div class="container py-5">
+            <h2 class="text-white">アクセス</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post" class="mt-5">
+              <div class="container">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="山田太郎" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">お問合せ内容</label>
+                  <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <input class="btn btn-primary mt-2" type="submit" value="送信">
+              </div>
+              <input type="hidden" name="accessKey" value="c2048760-8cf2-4da5-a689-84331c76bf62">
+            </form>
+          </div>       
         </div>
-  
-  
-        
-      </footer>
-
+      </section>
+      
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

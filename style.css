@@ -80,3 +80,12 @@ section{
     border-radius: 100px;
     flex: none;
 }
+/* 標準イメージサイズ */
+/* イメージ写真がない場合 */
+.no-image{
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+/*  */
+
+
