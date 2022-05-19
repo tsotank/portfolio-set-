@@ -41,15 +41,15 @@ section{
     font-weight: 700;
 }
 
-/* hro section */
+/* hero section */
 .hero{
-    background-image: url(./img/kyoto.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     z-index: 2;
 }
+
 .hero::after{
     content:"";
     position: absolute;
@@ -57,9 +57,33 @@ section{
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(39, 37, 79, 0.7);
+    background-color: rgba(39, 37, 79, 0.5);
     z-index: -1;
 }
+/* 矢印ボタンのスタイル */
+
+.hero .prevImage ,
+.hero .nextImage {
+    color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    cursor: pointer;
+}
+.hero .prevImage{
+    left: 20px;
+    font-size: 30px;
+}
+.hero .nextImage{
+    right: 20px;
+    font-size: 30px;
+}
+@media screen and (max-width: 480px){
+    .hero .prevImage ,
+.hero .nextImage{
+    display: none;
+}
+ }
 
 /* profile section */
 .col-img{
