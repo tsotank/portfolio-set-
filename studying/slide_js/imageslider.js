@@ -5,6 +5,19 @@ const prevImageElement = document.getElementById("prevImage");
 const nextImageElement = document.getElementById("nextImage");
 
 let currentSlideNumber = 1;
+
+
+
+
+function slide_interval(){
+    if(currentSlideNumber === imageTotalNumber){
+        currentSlideNumber = 1;
+    }else{
+        currentSlideNumber++;
+    }
+    mainImageElement.setAttribute('src' , `slide_img/${currentSlideNumber}.jpg`); 
+}
+setInterval(slide_interval , 5000);
  
 // main imageに関する機能
 mainImageElement.setAttribute("src" , 'slide_img/image1.jpg');
@@ -54,3 +67,6 @@ nextImageElement.addEventListener("click" , ()=>{
         changeImageSlide();
     }
 })
+
+
+

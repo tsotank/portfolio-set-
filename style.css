@@ -48,8 +48,9 @@ section{
     background-attachment: fixed;
     position: relative;
     z-index: 2;
+    transition-property: background-image;
+    transition-duration: 4s;
 }
-
 .hero::after{
     content:"";
     position: absolute;
@@ -79,7 +80,7 @@ section{
     font-size: 30px;
 }
 @media screen and (max-width: 480px){
-    .hero .prevImage ,
+.hero .prevImage ,
 .hero .nextImage{
     display: none;
 }
